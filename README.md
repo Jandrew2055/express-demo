@@ -105,7 +105,7 @@ If invalid or missing data is provided, the application returns specific error m
 
 The application uses centralized error handling through a global error handler. Middleware functions may pass custom error objects to next(), triggering the global error handler:
 
-- Deailed errors are logged to the console.
+- Detailed errors are logged to the console.
 - A JSON response with status and error description is sent back to the client.
 
 
