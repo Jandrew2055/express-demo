@@ -62,9 +62,16 @@ Setup Instructions
 
     `npm start`
 
-4.  **Test Routes with Postman - included 
+4.  **Test Routes with Postman"
 
-    Open your browser and navigate to <http://localhost:3000>.
+    The server will be running at `http://localhost:3000/`
+    Construct requests yourself in postman after inspecting server.js, demoRouter.js, and demoController.js
+    OR, import the Express-Demo.postman_collection.json into Postman to explore all the routes
+
+5. **Test and inspect HTML landing page**
+
+   Go to <http://localhost:3000/index> to interact with an HTML landing page
+   Interact with the buttons and input boxes. Inspect the fetch requests in the HTML to understand how they work, and how      the requests are routed. 
 
 Available Routes
 ----------------
@@ -75,7 +82,7 @@ Here are the key routes exposed by this project:
 
 -   `GET /index`: Serves the `index.html` file.
 -   `GET /api/welcome`: Serves the `welcome.gif` file.
--   **Unknown routes**: Returns the `404.png` image.
+-   `Catch all error handler*: Returns the `404.png` image.
 
 ### API Routes
 
@@ -94,21 +101,10 @@ Error Handling
 
 If invalid or missing data is provided, specific error messages will be returned with appropriate HTTP status codes.
 
-The application uses centralized error handling:
+The application uses centralized error handling with a global error handler. Some errors handling within middleware pass custom error objects to next() and trigger the global error handler. 
 
 -   Errors are logged to the console.
 -   A JSON response with status and error details is sent back to the client.
 
-Example Usage
--------------
-
-**From the browser:**
-
--   Open <http://localhost:3000/index> and try submitting text or a month.
-
-**Using Postman:**
-
--   `POST` <http://localhost:3000/router/sendText> with body `{ "input": "example" }`.
--   `POST` <http://localhost:3000/router/sendMonth> with body `{ "month": "January" }`.
 
 
