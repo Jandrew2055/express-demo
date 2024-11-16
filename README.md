@@ -93,12 +93,12 @@ Demonstrates MVC-style separation using controllers:
 Error Handling
 --------------
 
-If invalid or missing data is provided, specific error messages will be returned with appropriate HTTP status codes.
+If invalid or missing data is provided, the application returns specific error messages with appropriate HTTP status codes.
 
-The application uses centralized error handling with a global error handler. Some errors handling within middleware pass custom error objects to next() and trigger the global error handler. 
+The application uses centralized error handling through a global error handler. Middleware functions may pass custom error objects to next(), triggering the global error handler:
 
--   Errors are logged to the console.
--   A JSON response with status and error details is sent back to the client.
+- Deailed errors are logged to the console.
+- A JSON response with status and error description is sent back to the client.
 
 
 
