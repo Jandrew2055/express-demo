@@ -16,7 +16,7 @@ const monthToSeason = {
   December: 'Winter',
 };
 
-const Descriptions = {
+const descriptions = {
   Fall: 'Fall is the season of change and harvest.',
   Winter: 'Winter is the season of snow and holidays.',
   Spring: 'Spring is the season of flowers and new beginnings.',
