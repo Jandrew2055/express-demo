@@ -58,7 +58,7 @@ Setup Instructions
 
 7. **Test and inspect HTML landing page**:
 
-   Go to <http://localhost:3000/index> to interact with an HTML landing page
+   Go to <http://localhost:3000/index> to interact with an HTML landing page.
    Interact with the buttons and input boxes. Inspect the fetch requests in the HTML to understand how they work, and how the requests are routed.
 
   For the `submit month` button in particular, trace how the request data: 
