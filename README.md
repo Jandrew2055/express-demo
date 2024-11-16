@@ -54,7 +54,7 @@ Setup Instructions
 
     The server will be running at `http://localhost:3000/`
     Construct requests yourself in postman after inspecting server.js, demoRouter.js, and demoController.js
-    OR, import the Express-Demo.postman_collection.json into Postman to explore all the routes
+    OR, import the `Express-Demo.postman_collection.json` into Postman to explore all the routes
 
 7. **Test and inspect HTML landing page**:
 
