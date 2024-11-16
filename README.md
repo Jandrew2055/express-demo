@@ -38,37 +38,25 @@ Setup Instructions
 ------------------
 
 1.  **Clone the repository**:
-
-    bash
-
-    Copy code
-
+   
     `git clone <repository-url>
     cd <repository-directory>`
 
-2.  **Install dependencies**:
-
-    bash
-
-    Copy code
-
+3.  **Install dependencies**:
+   
     `npm install`
 
-3.  **Start the server**:
-
-    bash
-
-    Copy code
+5.  **Start the server**:
 
     `npm start`
 
-4.  **Test Routes with Postman"
+6.  **Test Routes with Postman**:
 
     The server will be running at `http://localhost:3000/`
     Construct requests yourself in postman after inspecting server.js, demoRouter.js, and demoController.js
     OR, import the Express-Demo.postman_collection.json into Postman to explore all the routes
 
-5. **Test and inspect HTML landing page**
+7. **Test and inspect HTML landing page**:
 
    Go to <http://localhost:3000/index> to interact with an HTML landing page
    Interact with the buttons and input boxes. Inspect the fetch requests in the HTML to understand how they work, and how      the requests are routed. 
