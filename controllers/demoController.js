@@ -121,7 +121,7 @@ demoController.sendSeasonImageURL = (req, res, next) => {
 
   // Retrieve the corresponding image URL for the season
   const imageURL = seasonImageURLs[res.locals.season];
-  const seasonDescription = Descriptions[res.locals.season];
+  const seasonDescription = descriptions[res.locals.season];
 
   // Check if imageURL is valid
   if (!imageURL) {
