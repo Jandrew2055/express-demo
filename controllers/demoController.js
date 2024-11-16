@@ -1,7 +1,7 @@
 // Create exports controller object
 const demoController = {};
 
-monthToSeason = {
+const monthToSeason = {
   January: 'Winter',
   February: 'Winter',
   March: 'Spring',
