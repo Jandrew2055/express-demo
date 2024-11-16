@@ -73,28 +73,34 @@ Setup Instructions
    Go to <http://localhost:3000/index> to interact with an HTML landing page
    Interact with the buttons and input boxes. Inspect the fetch requests in the HTML to understand how they work, and how      the requests are routed. 
 
-Available Routes
-----------------
+## Route Documentation
 
-Here are the key routes exposed by this project:
+### Basic Express Routes
+- `GET /api/greet` - Basic GET route returning JSON response
+- `GET /api/welcome` - Serving static files (GIF)
+- `POST /api/echo` - Handling POST requests with JSON body
+- `PUT /api/update` - Demonstrating PUT method with request body
+- `DELETE /api/delete/:id` - URL parameters and DELETE method
+- `GET /index` - Serving static HTML files
 
-### Static Routes
+### Error Handling
+- `GET /error` - Demonstrates 404 catch-all error handling
+- `DELETE /api/delete/abc` - Error handling for invalid parameters
+- `POST /router/message` (empty body) - Request body validation errors
+- `POST /router/sendMonth` (invalid month) - Business logic error handling
 
--   `GET /index`: Serves the `index.html` file.
--   `GET /api/welcome`: Serves the `welcome.gif` file.
--   `Catch all error handler*: Returns the `404.png` image.
+### Router Module Implementation (`/router` prefix)
+Demonstrates Express Router for route modularization:
+- `GET /router/demo` - Basic router GET endpoint
+- `POST /router/demo` - Router handling POST with body parsing
 
-### API Routes
+### Controller Pattern
+Demonstrates MVC-style separation using controllers:
+- `GET /router/greeting` - Controller integration with router
+- `POST /router/message` - Basic controller message handling
+- `POST /router/sendText` - Text processing controller (capitalization)
+- `POST /router/sendMonth` - Complex logic in controller (season determination)
 
-#### General
-
--   `GET /api/greet`: Returns a welcome message.
--   `POST /api/echo`: Echoes the message received in the request body.
-
-#### Dynamic Functionalities
-
--   `POST /router/sendText`: Capitalizes text input from the user.
--   `POST /router/sendMonth`: Accepts a month and returns the corresponding season and image.
 
 Error Handling
 --------------
