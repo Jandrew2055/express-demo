@@ -52,22 +52,22 @@ Setup Instructions
 
 6.  **Test Routes with Postman**:
 
-    The server will be running at `http://localhost:3000/`
-    Construct requests yourself in postman after inspecting server.js, demoRouter.js, and demoController.js
-    OR, import the `Express-Demo.postman_collection.json` into Postman to explore all the routes
+    The server will be running at `http://localhost:3000/`  
+    Construct requests yourself in postman after inspecting server.js, demoRouter.js, and demoController.js  
+    OR, import the `Express-Demo.postman_collection.json` into Postman to explore all the routes  
 
 7. **Test and inspect HTML landing page**:
 
-   Go to <http://localhost:3000/index> to interact with an HTML landing page.
+   Go to <http://localhost:3000/index> to interact with an HTML landing page.  
    Interact with the buttons and input boxes. Inspect the fetch requests in the HTML to understand how they work, and how the requests are routed.
 
-  For the `submit month` button in particular, trace how the request data: 
-- passes to demoRouter,
-- is processed inside demoController.findSeason,
-- is saved in res.locals,
-- is passed to and further processed in demoController.sendSeasonImageURL,
-- results in a response sent back to the client,
-- and finally triggers a change in the client-facing html.
+    For the `submit month` button in particular, trace how the request data: 
+  - passes to demoRouter,
+  - is processed inside demoController.findSeason,
+  - is saved in res.locals,
+  - is passed to and further processed in demoController.sendSeasonImageURL,
+  - results in a response sent back to the client,
+  - and finally triggers a change in the client-facing html.
 
 ## Route Documentation
 
