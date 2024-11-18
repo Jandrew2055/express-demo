@@ -16,7 +16,7 @@ router.post('/demo', (req, res) => {
 
 // routes using handler functions from demoController below
 
-// route for GET requests to the subpath '/message'
+// route for GET requests to the subpath '/greeting'
 router.get('/greeting', demoController.getGreeting);
 
 // route for POST requests to the subpath '/message'

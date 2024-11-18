@@ -74,7 +74,8 @@ demoController.findSeason = (req, res, next) => {
   const { month } = req.body;
 
   // Check if the month is missing in the request body
-  if (month === undefined) {
+  if (month === ''
+  ) {
     // Pass an error object to the next middleware if month is missing
     return next({
       log: 'demoController.findSeason: Missing month in request body',
